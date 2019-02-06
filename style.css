@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    
+}
+
+#main{
+    display: grid;
+    grid-template-areas: 'header header header'
+    'nav nav aside'
+    'section section aside'
+    'footer footer footer';
+    grid-auto-rows: 15vh 15vh 50vh 30vh;
+    grid-column-gap: 10px;
+}
+
+header{
+    grid-area: header;
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header a{
+    color: white;
+    font-size: 16pt;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+header a:nth-child(4){
+    font-size: 14pt;
+    color: black;
+}
+
+header a:hover{
+    font-size: 11pt;
+}
+
+nav{
+    grid-area: nav;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1{
+    color: black;
+    font-size: 25pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside{
+    grid-area: aside;
+    background-color: lemonchiffon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+aside p{
+    font-size: 12pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+aside h2{
+    font-display: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    grid-area: section;
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section img{
+    width: 400px;
+    height: 300px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+footer img{
+    width: 40px;
+    height: auto;
+
+}
+
+footer div{
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
